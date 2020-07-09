@@ -1,0 +1,22 @@
+def getPersonName():
+    FirstName = input("Enter your first name: ")
+    MiddleName = input("Enter your middle name: ")
+    LastName = input("Enter your last name: ")
+    return FirstName, MiddleName, LastName
+
+def getInitials(FirstName, MiddleName, LastName):
+    firstInitial = FirstName[0]
+    middleInitial = MiddleName[0]
+    lastInitial = LastName[0]
+
+    return firstInitial, middleInitial, lastInitial
+
+def displayInitials(firstInitial, middleInitial, lastInitial):
+    print(firstInitial, middleInitial, lastInitial)
+
+def main():
+    FirstName, MiddleName, LastName = getPersonName()
+
+    firstInitial, middleInitial, lastInitial = getInitials(FirstName,MiddleName,LastName)
+    displayInitials(firstInitial, middleInitial, lastInitial)
+main()
